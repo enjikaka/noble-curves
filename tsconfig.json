@@ -2,7 +2,9 @@
   "extends": "@paulmillr/jsbt/tsconfig.cjs.json",
   "compilerOptions": {
     "outDir": ".",
-    "isolatedDeclarations": true
+    "isolatedDeclarations": true,
+    "allowImportingTsExtensions": true,
+    "declaration": true
   },
   "include": [
     "src"
