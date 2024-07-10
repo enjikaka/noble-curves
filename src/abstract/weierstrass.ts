@@ -1,9 +1,9 @@
 /*! noble-curves - MIT License (c) 2022 Paul Miller (paulmillr.com) */
 // Short Weierstrass curve. The formula is: y² = x³ + ax + b
-import { AffinePoint, BasicCurve, Group, GroupConstructor, validateBasic, wNAF } from './curve.js';
-import * as mod from './modular.js';
-import * as ut from './utils.js';
-import { CHash, Hex, PrivKey, ensureBytes } from './utils.js';
+import { AffinePoint, BasicCurve, Group, GroupConstructor, validateBasic, wNAF } from './curve.ts';
+import * as mod from './modular.ts';
+import * as ut from './utils.ts';
+import { CHash, Hex, PrivKey, ensureBytes } from './utils.ts';
 
 export type { AffinePoint };
 type HmacFnSync = (key: Uint8Array, ...messages: Uint8Array[]) => Uint8Array;

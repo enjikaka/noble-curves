@@ -1,6 +1,6 @@
 /*! noble-curves - MIT License (c) 2022 Paul Miller (paulmillr.com) */
-import { mod, pow } from './modular.js';
-import { bytesToNumberLE, ensureBytes, numberToBytesLE, validateObject } from './utils.js';
+import { mod, pow } from './modular.ts';
+import { bytesToNumberLE, ensureBytes, numberToBytesLE, validateObject } from './utils.ts';
 
 const _0n = BigInt(0);
 const _1n = BigInt(1);

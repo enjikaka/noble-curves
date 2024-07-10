@@ -8,7 +8,7 @@ import {
   numberToBytesBE,
   numberToBytesLE,
   validateObject,
-} from './utils.js';
+} from './utils.ts';
 // prettier-ignore
 const _0n = BigInt(0), _1n = BigInt(1), _2n = BigInt(2), _3n = BigInt(3);
 // prettier-ignore

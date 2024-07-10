@@ -1,19 +1,19 @@
 /*! noble-curves - MIT License (c) 2022 Paul Miller (paulmillr.com) */
 // BLS (Barreto-Lynn-Scott) family of pairing-friendly curves.
-import { AffinePoint } from './curve.js';
-import { IField, getMinHashLength, mapHashToField } from './modular.js';
-import { Hex, PrivKey, CHash, bitLen, bitGet, ensureBytes } from './utils.js';
+import { AffinePoint } from './curve.ts';
+import { IField, getMinHashLength, mapHashToField } from './modular.ts';
+import { Hex, PrivKey, CHash, bitLen, bitGet, ensureBytes } from './utils.ts';
 // prettier-ignore
 import {
   MapToCurve, Opts as HTFOpts, H2CPointConstructor, htfBasicOpts,
   createHasher
-} from './hash-to-curve.js';
+} from './hash-to-curve.ts';
 import {
   CurvePointsType,
   ProjPointType as ProjPointType,
   CurvePointsRes,
   weierstrassPoints,
-} from './weierstrass.js';
+} from './weierstrass.ts';
 
 /**
  * BLS (Barreto-Lynn-Scott) family of pairing-friendly curves.

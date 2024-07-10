@@ -1,12 +1,12 @@
 /*! noble-curves - MIT License (c) 2022 Paul Miller (paulmillr.com) */
 import { sha256 } from '@noble/hashes/sha256';
 import { randomBytes } from '@noble/hashes/utils';
-import { createCurve } from './_shortw_utils.js';
-import { createHasher, isogenyMap } from './abstract/hash-to-curve.js';
-import { Field, mod, pow2 } from './abstract/modular.js';
-import type { Hex, PrivKey } from './abstract/utils.js';
-import { bytesToNumberBE, concatBytes, ensureBytes, numberToBytesBE } from './abstract/utils.js';
-import { ProjPointType as PointType, mapToCurveSimpleSWU } from './abstract/weierstrass.js';
+import { createCurve } from './_shortw_utils.ts';
+import { createHasher, isogenyMap } from './abstract/hash-to-curve.ts';
+import { Field, mod, pow2 } from './abstract/modular.ts';
+import type { Hex, PrivKey } from './abstract/utils.ts';
+import { bytesToNumberBE, concatBytes, ensureBytes, numberToBytesBE } from './abstract/utils.ts';
+import { ProjPointType as PointType, mapToCurveSimpleSWU } from './abstract/weierstrass.ts';
 
 const secp256k1P = BigInt('0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f');
 const secp256k1N = BigInt('0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141');

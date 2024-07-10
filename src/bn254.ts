@@ -1,8 +1,8 @@
 /*! noble-curves - MIT License (c) 2022 Paul Miller (paulmillr.com) */
 import { sha256 } from '@noble/hashes/sha256';
-import { getHash } from './_shortw_utils.js';
-import { Field } from './abstract/modular.js';
-import { weierstrass } from './abstract/weierstrass.js';
+import { getHash } from './_shortw_utils.ts';
+import { Field } from './abstract/modular.ts';
+import { weierstrass } from './abstract/weierstrass.ts';
 /**
  * bn254 pairing-friendly curve.
  * Previously known as alt_bn_128, when it had 128-bit security.

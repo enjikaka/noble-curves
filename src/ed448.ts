@@ -1,11 +1,11 @@
 /*! noble-curves - MIT License (c) 2022 Paul Miller (paulmillr.com) */
 import { shake256 } from '@noble/hashes/sha3';
 import { concatBytes, randomBytes, utf8ToBytes, wrapConstructor } from '@noble/hashes/utils';
-import { AffinePoint, Group } from './abstract/curve.js';
-import { ExtPointType, twistedEdwards } from './abstract/edwards.js';
-import { createHasher, expand_message_xof, htfBasicOpts } from './abstract/hash-to-curve.js';
-import { Field, isNegativeLE, mod, pow2 } from './abstract/modular.js';
-import { montgomery } from './abstract/montgomery.js';
+import { AffinePoint, Group } from './abstract/curve.ts';
+import { ExtPointType, twistedEdwards } from './abstract/edwards.ts';
+import { createHasher, expand_message_xof, htfBasicOpts } from './abstract/hash-to-curve.ts';
+import { Field, isNegativeLE, mod, pow2 } from './abstract/modular.ts';
+import { montgomery } from './abstract/montgomery.ts';
 import {
   bytesToHex,
   bytesToNumberLE,
@@ -13,7 +13,7 @@ import {
   equalBytes,
   Hex,
   numberToBytesLE,
-} from './abstract/utils.js';
+} from './abstract/utils.ts';
 
 /**
  * Edwards448 (not Ed448-Goldilocks) curve with following addons:

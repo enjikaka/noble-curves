@@ -1,8 +1,8 @@
 /*! noble-curves - MIT License (c) 2022 Paul Miller (paulmillr.com) */
 import { sha256 } from '@noble/hashes/sha256';
-import { getHash } from './_shortw_utils.js';
-import { Field, mod } from './abstract/modular.js';
-import { weierstrass } from './abstract/weierstrass.js';
+import { getHash } from './_shortw_utils.ts';
+import { Field, mod } from './abstract/modular.ts';
+import { weierstrass } from './abstract/weierstrass.ts';
 
 export const p = BigInt('0x40000000000000000000000000000000224698fc094cf91b992d30ed00000001');
 export const q = BigInt('0x40000000000000000000000000000000224698fc0994a8dd8c46eb2100000001');

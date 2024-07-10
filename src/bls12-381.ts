@@ -1,8 +1,8 @@
 /*! noble-curves - MIT License (c) 2022 Paul Miller (paulmillr.com) */
 import { sha256 } from '@noble/hashes/sha256';
 import { randomBytes } from '@noble/hashes/utils';
-import { bls, CurveFn } from './abstract/bls.js';
-import * as mod from './abstract/modular.js';
+import { bls, CurveFn } from './abstract/bls.ts';
+import * as mod from './abstract/modular.ts';
 import {
   bitGet,
   bitLen,
@@ -13,15 +13,15 @@ import {
   ensureBytes,
   Hex,
   numberToBytesBE,
-} from './abstract/utils.js';
+} from './abstract/utils.ts';
 // Types
-import { isogenyMap } from './abstract/hash-to-curve.js';
+import { isogenyMap } from './abstract/hash-to-curve.ts';
 import {
   AffinePoint,
   mapToCurveSimpleSWU,
   ProjConstructor,
   ProjPointType,
-} from './abstract/weierstrass.js';
+} from './abstract/weierstrass.ts';
 
 /*
 bls12-381 is pairing-friendly Barreto-Lynn-Scott elliptic curve construction allowing to:

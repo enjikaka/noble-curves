@@ -1,9 +1,9 @@
 /*! noble-curves - MIT License (c) 2022 Paul Miller (paulmillr.com) */
 // Twisted Edwards curve. The formula is: ax² + y² = 1 + dx²y²
-import { AffinePoint, BasicCurve, Group, GroupConstructor, validateBasic, wNAF } from './curve.js';
-import { mod } from './modular.js';
-import * as ut from './utils.js';
-import { ensureBytes, FHash, Hex } from './utils.js';
+import { AffinePoint, BasicCurve, Group, GroupConstructor, validateBasic, wNAF } from './curve.ts';
+import { mod } from './modular.ts';
+import * as ut from './utils.ts';
+import { ensureBytes, FHash, Hex } from './utils.ts';
 
 // Be friendly to bad ECMAScript parsers by not using bigint literals
 // prettier-ignore
