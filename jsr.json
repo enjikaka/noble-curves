@@ -1,5 +1,8 @@
 {
   "name": "@enjikaka/noble-curves",
   "version": "0.0.1",
-  "exports": "./src/index.ts"
+  "exports": "./src/index.ts",
+  "excludes": [
+    "./test"
+  ]
 }
